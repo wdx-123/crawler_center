@@ -1,0 +1,17 @@
+services:
+  crawler_center:
+    # 请将 <YOUR_GITHUB_USERNAME> 替换为您的 GitHub 用户名
+    # 示例: ghcr.io/zhangsan/crawler_center:0.1
+    image: ghcr.io/wdx-123/crawler_center:0.1
+    container_name: crawler_center
+    restart: always
+    ports:
+      # 宿主机端口:容器端口
+      - "8001:8001"
+    volumes:
+      # 挂载配置文件，方便在服务器直接修改配置
+      # 格式：宿主机路径:容器内路径
+      - ./config.yaml:/app/config.yaml
+    environment:
+      # 显式设置时区为上海
+      - TZ=Asia/Shanghai

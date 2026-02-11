@@ -1,0 +1,14 @@
+leetcode:
+  base_url: "https://leetcode.cn"
+
+luogu:
+  base_url: "https://www.luogu.com.cn"
+
+crawler:
+  default_timeout: 15
+  default_sleep_sec: 0.8
+  default_user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+api:
+  title: "crawler_center"
+  version: "0.1.0"
